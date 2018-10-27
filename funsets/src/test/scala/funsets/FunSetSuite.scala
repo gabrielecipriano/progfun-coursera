@@ -144,7 +144,7 @@ class FunSetSuite extends FunSuite {
     new TestSets {
       val only_two: Set = filter(union(union(s1, s2), s3), x => x + 2 == 4)
       assert(!contains(only_two, 1))
-      assert(contains(only_two, 2))
+      assert(contains(only_two, 2))z
       assert(!contains(only_two, 3))
     }
   }
